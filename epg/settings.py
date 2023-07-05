@@ -84,7 +84,7 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'verceldb', # 数据库名称
         'USER': 'default', # 登录数据库用户名
         'PASSWORD': 'k8Hr6Uzoaqpd', # 登录数据库密码
