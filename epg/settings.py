@@ -92,6 +92,7 @@ DATABASES = {
         'HOST': 'ep-late-feather-304688.us-east-1.postgres.vercel-storage.com', # 数据库服务器的主机地址
         'PORT': '5432' # 数据库服务的端口号
     }
+}
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
