@@ -9,6 +9,19 @@ tz_sh = tz.gettz('Asia/Shanghai')
 def d(request):
     return render(request,'a.html')
 def index(request):
+    now = datetime.now()
+    html = f'''
+    <html>
+        <body>
+            <h1>Hello from Vercel!</h1>
+            <p>The current time is { now }.</p>
+        </body>
+    </html>
+    '''
+    return HttpResponse(html)
+
+
+def index2(request):
     crawl_days = crawl_info['gen_xml_days']
     start_date = datetime.datetime.now().strftime(u'%Y{y}%m{m}%d{d}').format(y='年', m='月', d='日')
     start_date_no = datetime.datetime.now().strftime(u'%Y%m%d')
