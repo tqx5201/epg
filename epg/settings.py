@@ -72,15 +72,26 @@ WSGI_APPLICATION = 'epg.wsgi.app'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     },
 }
-
-
+psql "postgres://default:k8Hr6Uzoaqpd@ep-late-feather-304688.us-east-1.postgres.vercel-storage.com:5432/verceldb"
+'''
+DATABASES = {
+    'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'verceldb' # 数据库名称
+        'USER': 'default' # 登录数据库用户名
+        'PASSWORD': 'k8Hr6Uzoaqpd', # 登录数据库密码
+        'HOST': 'ep-late-feather-304688.us-east-1.postgres.vercel-storage.com' # 数据库服务器的主机地址
+        'PORT': '' # 数据库服务的端口号
+    }
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
