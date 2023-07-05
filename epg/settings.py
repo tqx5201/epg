@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 ## 显示SQL语句配置
-WSGI_APPLICATION = 'epg.wsgi.application'
+WSGI_APPLICATION = 'epg.wsgi.app'
 
 
 # Database
