@@ -78,7 +78,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     },
 }
-#psql "postgres://default:k8Hr6Uzoaqpd@ep-late-feather-304688.us-east-1.postgres.vercel-storage.com:5432/verceldb"
 '''
 DATABASES = {
     'default': {
