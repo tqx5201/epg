@@ -125,7 +125,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = '/static/'
+STATIC_URL = 'https://cdn.bootcdn.net/ajax/libs/'
 STATICFILES_DIRS =[os.path.join(BASE_DIR,'static')]
 
 # Default primary key field type
