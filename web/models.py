@@ -87,7 +87,7 @@ class Channel(models.Model):
             channels = self.objects.filter(ineed=1, has_epg=1)
         else:
             channels = self.objects.filter(sort__in=sorts, ineed=1, has_epg=1)
-        return [channels, channels.values_list('id')]
+        return [channels, list(map(str,channels.values_list('id')))]
     def get_match_channels(self):
         channels = self.objects.filter(ineed = 1,has_epg=1)
         return channels
