@@ -85,10 +85,10 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'verceldb', # 数据库名称
-        'USER': 'default', # 登录数据库用户名
-        'PASSWORD': 'k8Hr6Uzoaqpd', # 登录数据库密码
-        'HOST': 'ep-late-feather-304688.us-east-1.postgres.vercel-storage.com', # 数据库服务器的主机地址
+        'NAME': os.getenv('POSTGRES_DATABASE'), # 数据库名称
+        'USER': os.getenv('POSTGRES_USER'), # 登录数据库用户名
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD'), # 登录数据库密码
+        'HOST': os.getenv('POSTGRES_HOST'), # 数据库服务器的主机地址
         'PORT': 5432 # 数据库服务的端口号
     }
 }
