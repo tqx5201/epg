@@ -99,7 +99,8 @@ class Channel(models.Model):
 
 
 class Epg(models.Model):
-    channel_id = models.CharField('频道ID', db_index=True, max_length=50)
+    #channel_id = models.CharField('频道ID', db_index=True, max_length=50)
+    channel_id = models.IntegerField('频道ID', db_index=True)
     starttime = models.DateTimeField('开始时间', db_index=True)
     endtime = models.DateTimeField('结束时间', null=True)
     title = models.CharField('节目名称', max_length=200)
