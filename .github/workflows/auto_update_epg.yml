@@ -1,12 +1,9 @@
-name: auto_update_www
+name: 自动更新php
 
 on:
-  push:
-    schedule:
-      - name: daily_task
-        description: Run task every day at 0:00 AM
-        cron: "0 2 * * *"
-    branches: [ "master" ]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 22 * * *'
 
 jobs:
   build:
