@@ -17,6 +17,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Use variables # 使用vars关键词引用 Variables 中定义的变量
+      run: |
+        echo "repository variable : ${{ vars.POSTGRES_HOST }}"
+        echo "organization variable : ${{ vars.POSTGRES_NAME }}"
+        
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
