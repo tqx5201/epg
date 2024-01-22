@@ -69,7 +69,7 @@ TEMPLATES = [
 ## 显示SQL语句配置
 WSGI_APPLICATION = 'epg.wsgi.app'
 
-
+'''
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 DATABASES = {
@@ -91,7 +91,7 @@ DATABASES = {
         'PORT': 5432 # 数据库服务的端口号
     }
 }
-'''
+#'''
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
