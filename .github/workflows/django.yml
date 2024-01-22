@@ -20,7 +20,7 @@ jobs:
     - name: Use variables # 使用vars关键词引用 Variables 中定义的变量
       run: |
         echo "repository variable : ${{ vars.POSTGRES_USER.POSTGRES_HOST }}"
-        echo "organization variable : ${{ vars.POSTGRES_NAME }}"
+        echo "organization variable : ${{ vars.HOST }}"
         
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
