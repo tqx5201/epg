@@ -33,3 +33,8 @@ jobs:
     - name: 采集节目信息
       run: |
         python main.py
+      with:
+        POSTGRES_HOST:${{ POSTGRES_HOST }}
+        POSTGRES_USER:${{ POSTGRES_USER }}
+        POSTGRES_PASSWORD:${{ POSTGRES_PASSWORD }}
+        POSTGRES_DATABASE:${{ POSTGRES_DATABASE }}
