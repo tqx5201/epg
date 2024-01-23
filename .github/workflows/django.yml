@@ -1,4 +1,4 @@
-name: Django CI
+name: 采集节目信息
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: 采集节目信息
+    - name: 开始采集节目信息
       env:
         POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
         POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
@@ -37,3 +37,9 @@ jobs:
         POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
       run: |
         python ${{ github.workspace }}/main.py
+
+    - name: Upload a Build Artifact回传
+      uses: actions/upload-artifact@v4.0.0
+      with:
+          name: 采集节目信息
+          path: ${{ github.workspace }}/
