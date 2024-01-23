@@ -126,6 +126,7 @@ USE_TZ = True
 
 #STATIC_URL = 'https://cdn.bootcdn.net/ajax/libs/'
 STATIC_URL = 'http://epg.51zmt.top:8000/static/'
+STATIC_ROOT = '/static/'
 STATICFILES_DIRS =[os.path.join(BASE_DIR,'static')]
 
 # Default primary key field type
