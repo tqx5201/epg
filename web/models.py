@@ -224,7 +224,9 @@ class Epg(models.Model):
             ret = self.objects.filter(channel_id=channel_id, program_date__gte=program_date,
                                       program_date_lte=last_program_date).delete()
         return ret
-
+    # 删除EPG表指定program_date日期以前的数据
+    def del_channel_epgs_date(self, program_date):
+        ret = self.objects.filter(program_date__lte=program_date).delete()
 
 class Crawl_log(models.Model):
     LOG_LEVELS = (
