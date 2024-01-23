@@ -3,7 +3,7 @@ name: 自动更新php
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 18 * * *'
+    - cron:  '0 6 * * *'
 
 jobs:
   build:
