@@ -17,6 +17,10 @@ tz_sh = tz.gettz('Asia/Shanghai')
 # 抓取入口
 
 def main():
+    previous_date = datetime.date.today()-datetime.timedelta(days=8)
+    print("删除%s以前的节目"%previous_date)
+    Epg.del_channel_epgs_date(Epg,program_date=previous_date)
+    
     #log_start = 'crawl-crawl-main '
     log_start = ''
     max_crawl_days = crawl_info['max_crawl_days']
