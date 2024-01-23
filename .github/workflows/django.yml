@@ -1,8 +1,8 @@
 name: 采集节目信息
 
 on:
-  push:
-    branches: [ "master" ]
+  #push:
+    #branches: [ "master" ]
   #pull_request:
     #branches: [ "master" ]
   schedule:
@@ -36,7 +36,8 @@ jobs:
         POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
         POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
       run: |
-        python ${{ github.workspace }}/main.py -channel
+        python ${{ github.workspace }}/main.py
+        #python ${{ github.workspace }}/main.py -channel
 
     - name: Upload a Build Artifact回传
       uses: actions/upload-artifact@v4.0.0
