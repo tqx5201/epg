@@ -17,12 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 import web.views
-
+'''
 from django.urls import re_path
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.static import serve
-
+'''
 
 urlpatterns = [
     path('',web.views.index),
@@ -30,5 +30,5 @@ urlpatterns = [
     path('api/', include('web.urls')),
     path('admin/', admin.site.urls),
     path('test/',web.views.d),
-    re_path(r"^static/(?P<path>.*)$", serve, {"document_root": settings.STATIC_ROOT}, name='static'),
+    #re_path(r"^static/(?P<path>.*)$", serve, {"document_root": settings.STATIC_ROOT}, name='static'),
 ]
