@@ -1,8 +1,8 @@
 name: 采集节目信息
 
 on:
-  #push:
-    #branches: [ "master" ]
+  push:
+    branches: [ "master" ]
   #pull_request:
     #branches: [ "master" ]
   schedule:
