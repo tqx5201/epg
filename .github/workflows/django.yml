@@ -36,7 +36,7 @@ jobs:
         POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
         POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
       run: |
-        python ${{ github.workspace }}/main.py
+        python ${{ github.workspace }}/main.py -channel
 
     - name: Upload a Build Artifact回传
       uses: actions/upload-artifact@v4.0.0
