@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 22 * * *'
+    - cron:  '0 20 * * *'
 
 jobs:
   build:
@@ -36,4 +36,4 @@ jobs:
         POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
         POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
       run: |
-        python main.py
+        python ${{ github.workspace }}/main.py
