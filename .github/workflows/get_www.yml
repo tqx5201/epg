@@ -1,11 +1,11 @@
-name: 查看网页源码
+name: 自动xml2db
 
 on:
-  push:
-    branches:
-      - master
+  #push:
+    #branches:
+      #- master
   schedule:
-    - cron: 0 4,10,16,22 * * *
+    - cron: 0 0,22 * * *
   workflow_dispatch:
 
 jobs:
@@ -15,5 +15,5 @@ jobs:
     steps:
       - name: 查看网页源码
         run: |
-          #wget -O - http://epg.stncp.hz.cz/xml2db.php|cat
-          wget -O - http://epg.stncp.hz.cz|cat
+          wget -O - http://epg.stncp.hz.cz/xml2db.php|cat
+          #wget -O - http://epg.stncp.hz.cz|cat
