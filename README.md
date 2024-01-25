@@ -100,7 +100,7 @@ DATABASES = {
 
 [链接批量生成](http://tools.jb51.net/aideddesign/ljscq)
 
-                                    ### 关于PLTV回看
+### 关于PLTV回看
 <p>部分带PLTV的链接支持7天回看，支持回看的播放器可以直接调用，不支持的也可以通过自定义来实现回看，不过要自己查一下节目单。在地址最后加上?playseek=开始时间-结束时间 (如?playseek=20200722222222-20200722223222代表2020年7月22日22时22分22秒之后的10分钟片段)，再将地址里的PLTV改成TVOD即可播放 例:<a href="http://183.207.248.108/ott.js.chinamobile.com/PLTV/3/224/3221227581/index.m3u8" rel="nofollow">直播格式</a> <a href="http://183.207.248.108/ott.js.chinamobile.com/TVOD/3/224/3221227581/index.m3u8?playseek=20200722222222-20200722223222" rel="nofollow">回看格式</a></p>
 
 
