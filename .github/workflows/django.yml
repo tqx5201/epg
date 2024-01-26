@@ -52,6 +52,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           ls
           git add .
-          git commit *.xml.gz -m "Add generated file"
+          git commit *.xml.gz -m "gz文件"
+          git commit *.xml -m "xml文件"
           #git pull --rebase
           git push -f
