@@ -50,6 +50,7 @@ jobs:
           #git config --local user.name "tqx5201"
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          ls
           git add .
           git commit *.xml -m "Add generated file"
           #git pull --rebase
