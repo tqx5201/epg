@@ -46,8 +46,10 @@ jobs:
           path: ${{ github.workspace }}/
     - name: 提交更改
       run: |
-          git config --local user.email "tqx5201@163.com"
-          git config --local user.name "tqx5201"
+          #git config --local user.email "tqx5201@163.com"
+          #git config --local user.name "tqx5201"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit *.xml -m "Add generated file"
           #git pull --rebase
