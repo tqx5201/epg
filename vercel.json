@@ -9,6 +9,9 @@
     {
       "src": "/(.*)",
       "dest": "epg/wsgi.py"
+    },{
+      "src": "/favicon.ico", 
+      "dest": "https://juicy.vercel.app/favicon.ico"
     }
   ]
 }
