@@ -54,5 +54,6 @@ jobs:
           git add .
           git commit *.xml.gz -m "gz文件"
           git commit *.xml -m "xml文件"
+          git commit *.m3u -m "m3u文件"
           #git pull --rebase
           git push -f
