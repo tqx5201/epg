@@ -55,11 +55,11 @@ http://192.168.2.1:1111/26.ts
 http://192.168.2.1:1111/27.ts
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/qt/中国教育1台.png" tvg-id="22" tvg-name="中国教育1台" group-title="卫视",教育1台
 http://192.168.2.1:1111/28.ts
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" tvg-id="26" tvg-name="北京卫视" group-title="卫视",北京卫视
-http://192.168.2.1:1111/29.ts
-#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/tianjin.png" tvg-id="43" tvg-name="天津卫视" group-title="卫视",天津卫视
-http://192.168.2.1:1111/30.ts
 #EXTINF:-1 tvg-logo="None" tvg-id="30" tvg-name="四川公共·乡村" group-title="央视",四川公共·乡村
+http://192.168.2.1:1111/29.ts
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/beijing.png" tvg-id="26" tvg-name="北京卫视" group-title="卫视",北京卫视
+http://192.168.2.1:1111/30.ts
+#EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/tianjin.png" tvg-id="43" tvg-name="天津卫视" group-title="卫视",天津卫视
 http://192.168.2.1:1111/31.ts
 #EXTINF:-1 tvg-logo="http://epg.51zmt.top:8000/tb1/ws/anhui.png" tvg-id="45" tvg-name="安徽卫视" group-title="卫视",安徽卫视
 http://192.168.2.1:1111/32.ts
