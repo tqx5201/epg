@@ -7,7 +7,7 @@
   ],
   "routes": [
         {"src": "/favicon222.ico", "dest": "http://epg.51zmt.top:8000/favicon.ico"},
-        {"src": "/favicon.ico", "dest": "epg/favicon.ico"},
+        {"src": "/favicon.ico", "dest": "/favicon.ico"},
         {"src": "/(.*)","dest": "epg/wsgi.py"}
     ]
 }
