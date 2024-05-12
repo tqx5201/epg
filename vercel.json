@@ -6,7 +6,7 @@
     }
   ],
   "routes": [
-    {"src": "/(.*)","dest": "epg/wsgi.py"},
-    { "src": "/favicon.ico", "dest": "https://typecho.org/favicon.ico" }
-  ]
+    {"src": "/favicon.ico", "dest": "https://typecho.org/favicon.ico"},
+    {"src": "/(.*)","dest": "epg/wsgi.py"}
+    ]
 }
